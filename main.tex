@@ -1,0 +1,24 @@
+\documentclass[12pt, a4paper, twoside, openright, openbib]{book}
+\usepackage{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\begin{document}
+
+%%% FRONTPAGE
+\include{frontpage/frontpage}
+\thispagestyle{empty}
+\cleardoublepage
+
+%%% TABLE OF CONTENTS
+\pagenumbering{roman}
+\setcounter{page}{1}
+\tableofcontents
+\cleardoublepage
+
+%%% CONTENT
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\include{content/introduction}
+
+\end{document}
